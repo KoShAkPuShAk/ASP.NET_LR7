@@ -1,0 +1,62 @@
+﻿@model WebApplication9.Models.FileModel
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        input[type="text"], button {
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 40%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div>
+            <label for="firstName">Ім'я:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+            <label for="lastName">Прізвище:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+            <label for="fileName">Назва файлу:</label>
+            <input type="text" id="fileName" name="fileName" required>
+        </div>
+        <button type="submit">Завантажити</button>
+    </form>
+</body>
+</html>
